@@ -6,6 +6,6 @@ const userRoutes = require('./user-routes');
 const router = express.Router();
 
 router.get('/info', InfoController.info);
-router.post('/signup', userRoutes);
+router.use('/user', userRoutes);
 
 module.exports = router;
